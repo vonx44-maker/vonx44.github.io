@@ -32,13 +32,13 @@
 .balloon::after {
     content: "";
     position: absolute;
-    top: 74px;
+    top: 72px;
     left: 50%;
-    width: 30px;
+    width: 20px;
     height: 90px;
     border-left: 2px solid #B57EDC;
     border-bottom: 2px solid #B57EDC;
-    border-radius: 0 0 0 100%;
+    border-radius: 0 0 0 50%;
     opacity: 0.6;
 }
 
@@ -71,25 +71,25 @@
     animation-delay: 8s;
 }
      .balloon:nth-of-type(1)::after {
-    transform: rotate(-10deg);
+    transform: translateX(-50%) rotate(-10deg);
 }
 
 .balloon:nth-of-type(2)::after {
-    transform: rotate(8deg);
+    transform: translateX(-50%) rotate(8deg);
 }
 
 .balloon:nth-of-type(3)::after {
-    transform: rotate(-5deg);
+    transform: translateX(-50%) rotate(-5deg);
 }
 
 .balloon:nth-of-type(4)::after {
-    transform: rotate(12deg);
+    transform: translateX(-50%) rotate(12deg);
 }
 
 .balloon:nth-of-type(5)::after {
-    transform: rotate(-8deg);
+    transform: translateX(-50%) rotate(-8deg);
 }
-
+      
 @keyframes float {
     0% {
         transform: translate(0, 0) rotate(-2deg);
