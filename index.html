@@ -13,10 +13,10 @@
     border-radius: 50%;
     z-index: 9999;
     opacity: 0.8;
-    animation: float 10s linear infinite;
-}
+    animation: float 14s ease-in-out infinite;
 
-.balloon::before {
+}
+      .balloon::before {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -27,6 +27,19 @@
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 10px solid #B57EDC;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 30px;
+    height: 100px;
+    border-left: 2px solid #B57EDC;
+    border-bottom: 2px solid #B57EDC;
+    border-radius: 0 0 0 100%;
+    opacity: 0.6;
 }
 
 .balloon:nth-of-type(1) {
@@ -57,14 +70,45 @@
     background: #D8BFD8;
     animation-delay: 8s;
 }
+     .balloon:nth-of-type(1)::after {
+    transform: rotate(-10deg);
+}
+
+.balloon:nth-of-type(2)::after {
+    transform: rotate(8deg);
+}
+
+.balloon:nth-of-type(3)::after {
+    transform: rotate(-5deg);
+}
+
+.balloon:nth-of-type(4)::after {
+    transform: rotate(12deg);
+}
+
+.balloon:nth-of-type(5)::after {
+    transform: rotate(-8deg);
+}
 
 @keyframes float {
-    from {
-        transform: translateY(0);
+    0% {
+        transform: translate(0, 0) rotate(-2deg);
     }
 
-    to {
-        transform: translateY(-140vh);
+    25% {
+        transform: translate(-15px, -35vh) rotate(2deg);
+    }
+
+    50% {
+        transform: translate(15px, -70vh) rotate(-2deg);
+    }
+
+    75% {
+        transform: translate(-10px, -105vh) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(10px, -140vh) rotate(-2deg);
     }
 }
     </style>
