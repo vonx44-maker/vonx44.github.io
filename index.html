@@ -16,6 +16,19 @@
     animation: float 10s linear infinite;
 }
 
+.balloon::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #B57EDC;
+}
+
 .balloon:nth-of-type(1) {
     left: 10%;
     background: #E6CCFF;
