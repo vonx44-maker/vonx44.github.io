@@ -3,7 +3,8 @@
   
   <head>
   <title>Vien's 1st Birthday & Christening</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 
     <style>
      .balloon {
@@ -33,13 +34,12 @@
 .balloon::after {
     content: "";
     position: absolute;
-    top: 72px;
+    top: 75px;
     left: 50%;
-    width: 20px;
+    width: 0;
     height: 90px;
     border-left: 2px solid #B57EDC;
-    border-bottom: 2px solid #B57EDC;
-    border-radius: 0 0 0 100%;
+    transform: translateX(-50%);
     opacity: 0.6;
 }
 
