@@ -3,7 +3,7 @@
   
   <head>
   <title>Vien's 1st Birthday & Christening</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">bes&display=swap">
 
     <style>
      .balloon {
@@ -104,8 +104,40 @@
     z-index:10000;
     color:white;
     text-align:center;
+    overflow:hidden;
     animation:fadeOut 1.5s ease forwards;
     animation-delay:3s;
+}
+      .sparkle{
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 10px white;
+    animation:twinkle 2s infinite ease-in-out;
+}
+
+.sparkle:nth-child(1){top:10%;left:20%;}
+.sparkle:nth-child(2){top:25%;left:70%;}
+.sparkle:nth-child(3){top:40%;left:50%;}
+.sparkle:nth-child(4){top:60%;left:25%;}
+.sparkle:nth-child(5){top:75%;left:80%;}
+.sparkle:nth-child(6){top:15%;left:85%;}
+.sparkle:nth-child(7){top:85%;left:40%;}
+.sparkle:nth-child(8){top:50%;left:10%;}
+.sparkle:nth-child(9){top:35%;left:90%;}
+.sparkle:nth-child(10){top:90%;left:60%;}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:.2;
+        transform:scale(.5);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1.5);
+    }
 }
 
 #welcome-screen h1{
@@ -164,6 +196,17 @@
 
   <body style="margin:0;">
     <div id="welcome-screen">
+
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
     <h1>Welcome 💜</h1>
     <p>Join us as we Celebrate Vien's 1st Birthday & Christening</p>
 </div>
